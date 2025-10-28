@@ -1,0 +1,162 @@
+/* Azur slider book-like styles */
+.azur-slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0 1.5rem 0;
+}
+.azur-slider-arrow {
+  background: #fff;
+  border: 2px solid #111;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #111;
+  cursor: pointer;
+  box-shadow: 1px 1px 6px #eee;
+  transition: background 0.2s, transform 0.2s;
+}
+.azur-slider-arrow:hover, .azur-slider-arrow:focus {
+  background: #f9f6ff;
+  transform: scale(1.1);
+}
+.azur-slider-image-wrapper {
+  background: #fff;
+  border: 2px solid #111;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px #eee;
+  padding: 1.2rem 1.5rem;
+  min-width: 320px;
+  max-width: 90vw;
+  max-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.azur-slider-img {
+  max-width: 100%;
+  max-height: 56vh;
+  border-radius: 6px;
+  box-shadow: 2px 2px 8px #ccc;
+  transition: box-shadow 0.2s, transform 0.3s cubic-bezier(.4,2,.6,1);
+  background: #fff;
+}
+body {
+  background: #fff;
+  color: #111;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo styles */
+.logo {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.potta-logo {
+  display: inline-block;
+  font-family: 'Potta One', cursive;
+  font-size: 4rem;
+  transform: rotate(180deg);
+  line-height: 1;
+  color: #111;
+}
+
+/* Header grid styles */
+/* Single header style */
+/* Header styles */
+.bv-bold {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+}
+.bv-light {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 300;
+}
+.bv-light em {
+  font-style: italic;
+}
+.libre {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+}
+.libre em {
+  font-style: italic;
+}
+header {
+  border-bottom: 4px solid #111;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -2px;
+  margin: 0;
+}
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  color: #555;
+}
+.projects {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.projects h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 2px solid #111;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+#project-list {
+  list-style: none;
+  padding: 0;
+}
+#project-list li {
+  background: #f4f4f4;
+/* Project thumbnail images as squares */
+#project-list li img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  background: #fff;
+  border: 2px solid #111;
+  box-shadow: 2px 2px 8px #ccc;
+}
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+#project-list li:focus-within, #project-list li:hover {
+  background: #eaeaea;
+  outline: 2px solid #111;
+}
+footer {
+  border-top: 4px solid #111;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .projects {
+    padding: 0 0.5rem;
+  }
+}
