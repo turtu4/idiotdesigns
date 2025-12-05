@@ -34,6 +34,60 @@ const projects = [
     description: "Simulation Exposure Reports – A speculative design project exploring simulation over-exposure in a sci-fi medical context.",
     thumbnail: "images/azur/azur0.jpg"
   },
+  {
+    name: "Bore",
+    url: "projects/bore.html",
+    description: "Image Series – Gallery pulled from the Bore set.",
+    thumbnail: "images/bore/bore0.png"
+  },
+  {
+    name: "GUI",
+    url: "projects/gui.html",
+    description: "Image Series – Interface sketches collected into a slider.",
+    thumbnail: "images/gui/gui0.png"
+  },
+  {
+    name: "Hear",
+    url: "projects/hear.html",
+    description: "Image Series – Visuals from the Hear collection.",
+    thumbnail: "images/hear/hear0.png"
+  },
+  {
+    name: "Invisible",
+    url: "projects/invisible.html",
+    description: "Image Series – A one-frame glimpse into Invisible.",
+    thumbnail: "images/invisible/invisible0.png"
+  },
+  {
+    name: "Ping",
+    url: "projects/ping.html",
+    description: "Image Series – Posters and frames from the Ping folder.",
+    thumbnail: "images/ping/ping0.png"
+  },
+  {
+    name: "POM",
+    url: "projects/pom.html",
+    description: "Image Series – A concise run of POM visuals.",
+    thumbnail: "images/pom/pom0.png"
+  },
+  {
+    name: "Puzzle",
+    url: "projects/puzzle.html",
+    description: "Image Series – The full Puzzle set assembled into one view.",
+    thumbnail: "images/puzzle/puzzle0.png"
+  },
+  {
+    name: "Shine",
+    url: "projects/shine.html",
+    description: "Image Series – Highlights and domes from the Shine set.",
+    thumbnail: "images/shine/shine0.png"
+  },
+  {
+    name: "Tool",
+    url: "projects/tool.html",
+    description: "Image Series – Explorations captured in the Tool folder.",
+    thumbnail: "images/tool/tool0.png"
+  },
 ];
 
 const list = document.getElementById('project-list');

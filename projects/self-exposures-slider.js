@@ -1,24 +1,25 @@
-const selfImages = [
-  "../images/self/000037 1.png",
-  "../images/self/000048 2.JPG",
-  "../images/self/000075.JPG",
-  "../images/self/Dispute.JPG",
-  "../images/self/Frame 62.png",
-  "../images/self/Frame 63.png",
-  "../images/self/Frame 64.png",
-  "../images/self/Frame 65.png",
-  "../images/self/IMG_2177 2.JPG",
-  "../images/self/IMG_2187 2.JPG",
-  "../images/self/IMG_2222 2.JPG",
-  "../images/self/IMG_2224 2.JPG",
-  "../images/self/IMG_2230 2.JPG",
-  "../images/self/IMG_2241 2.JPG",
-  "../images/self/IMG_2243 2.JPG",
-  "../images/self/Opposition.JPG",
-  "../images/self/R1-01249-0014 1.png",
-  "../images/self/Unity.JPG",
-  "../images/self/mama.png"
+const selfFiles = [
+  "self1.png",
+  "self2.JPG",
+  "self3.JPG",
+  "self4.JPG",
+  "self5.png",
+  "self6.png",
+  "self7.png",
+  "self8.JPG",
+  "self9.JPG",
+  "self10.JPG",
+  "self11.JPG",
+  "self12.JPG",
+  "self13.JPG",
+  "self14.JPG",
+  "self15.JPG",
+  "self16.JPG"
 ];
+
+const selfImages = selfFiles
+  .sort((a, b) => parseInt(a.match(/\d+/)[0], 10) - parseInt(b.match(/\d+/)[0], 10))
+  .map((file) => `../images/self/${file}`);
 
 let currentSelf = 0;
 
