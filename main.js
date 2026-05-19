@@ -1,4 +1,5 @@
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const isStackedProjectsLayout = () => window.matchMedia('(max-width: 760px)').matches;
 const siteHeader = document.querySelector('header');
 
 const syncIntroHeader = () => {
@@ -224,7 +225,7 @@ categories.forEach((cat) => {
     });
 
     const li = document.createElement('li');
-    li.innerHTML = `<a href="${project.url}" class="work-index-link" data-project-index="${renderedProjects.length - 1}" style="--project-color: ${projectColors[(projectNumber - 1) % projectColors.length]};"><span>${String(projectNumber).padStart(2, '0')}</span>${project.name}</a>`;
+    li.innerHTML = `<a href="${project.url}" class="work-index-link" data-project-index="${renderedProjects.length - 1}" style="--project-color: ${projectColors[(projectNumber - 1) % projectColors.length]};"><span>${String(projectNumber).padStart(2, '0')}</span><img class="work-index-thumb" src="${image}" alt="${project.name} thumbnail">${project.name}</a>`;
     ul.appendChild(li);
     projectNumber += 1;
   });
@@ -244,6 +245,8 @@ if (projectsSection && renderedProjects.length) {
   const stageImage = document.createElement('img');
   stageImage.className = 'work-stage-image';
   stageImage.alt = '';
+  stageImage.tabIndex = 0;
+  stageImage.setAttribute('role', 'link');
 
   const stageMeta = document.createElement('div');
   stageMeta.className = 'work-stage-meta';
@@ -300,6 +303,7 @@ if (projectsSection && renderedProjects.length) {
     stage.style.setProperty('--project-color', project.color);
     stageImage.src = project.image;
     stageImage.alt = `${project.name} thumbnail`;
+    stageImage.setAttribute('aria-label', `Open ${project.name}`);
     stageMeta.innerHTML = `
       <span>${project.number}</span>
       <strong>${project.name}</strong>
@@ -359,6 +363,22 @@ if (projectsSection && renderedProjects.length) {
     });
   });
 
+  stageImage.addEventListener('click', () => {
+    const project = renderedProjects[activeIndex];
+    if (project?.url) {
+      window.location.href = project.url;
+    }
+  });
+
+  stageImage.addEventListener('keydown', (event) => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    event.preventDefault();
+    const project = renderedProjects[activeIndex];
+    if (project?.url) {
+      window.location.href = project.url;
+    }
+  });
+
   if (!reduceMotion) {
     stageImage.addEventListener('pointermove', (event) => {
       const rect = stageImage.getBoundingClientRect();
@@ -390,12 +410,19 @@ serviceButtons.forEach((button) => {
     if (!target || !projectsSection || !groupsContainer || !targetId) return;
 
     event.preventDefault();
+    activateProjectByCategory(targetId);
+
+    if (isStackedProjectsLayout()) {
+      target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+      history.pushState(null, '', `#${targetId}`);
+      return;
+    }
+
     projectsSection.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
     groupsContainer.scrollTo({
       top: Math.max(target.offsetTop - 8, 0),
       behavior: reduceMotion ? 'auto' : 'smooth'
     });
-    activateProjectByCategory(targetId);
     history.pushState(null, '', `#${targetId}`);
   });
 });
