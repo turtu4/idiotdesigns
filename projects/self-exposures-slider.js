@@ -26,7 +26,7 @@ let currentSelf = 0;
 function showSelfSlide(idx) {
   const img = document.getElementById('self-slide-img');
   img.src = selfImages[idx];
-  img.alt = `Self-Exposures image ${idx + 1}`;
+  img.alt = `Self Exposures image ${idx + 1}`;
 }
 
 function nextSelfSlide() {

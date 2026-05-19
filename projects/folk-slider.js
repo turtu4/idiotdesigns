@@ -8,7 +8,7 @@ let currentFolk = 0;
 function showFolkSlide(idx) {
   const img = document.getElementById('folk-slide-img');
   img.src = folkImages[idx];
-  img.alt = `Murderfolk image ${idx + 1}`;
+  img.alt = `Cover Art image ${idx + 1}`;
 }
 
 function nextFolkSlide() {

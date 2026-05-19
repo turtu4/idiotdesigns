@@ -12,7 +12,7 @@ let currentPing = 0;
 function showPingSlide(idx) {
   const img = document.getElementById('ping-slide-img');
   img.src = pingImages[idx];
-  img.alt = `Penhold Ping Pong Paddle image ${idx + 1}`;
+  img.alt = `Penhold Paddle image ${idx + 1}`;
 }
 
 function nextPingSlide() {

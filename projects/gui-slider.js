@@ -12,7 +12,7 @@ let currentGui = 0;
 function showGuiSlide(idx) {
   const img = document.getElementById('gui-slide-img');
   img.src = guiImages[idx];
-  img.alt = `Handledaren image ${idx + 1}`;
+  img.alt = `Scenography image ${idx + 1}`;
 }
 
 function nextGuiSlide() {

@@ -9,7 +9,7 @@ let currentTool = 0;
 function showToolSlide(idx) {
   const img = document.getElementById('tool-slide-img');
   img.src = toolImages[idx];
-  img.alt = `Friends as Tools for Play image ${idx + 1}`;
+  img.alt = `Tools for Play image ${idx + 1}`;
 }
 
 function nextToolSlide() {

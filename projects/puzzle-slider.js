@@ -9,7 +9,7 @@ let currentPuzzle = 0;
 function showPuzzleSlide(idx) {
   const img = document.getElementById('puzzle-slide-img');
   img.src = puzzleImages[idx];
-  img.alt = `Analogue Connections image ${idx + 1}`;
+  img.alt = `Feeling Puzzled image ${idx + 1}`;
 }
 
 function nextPuzzleSlide() {

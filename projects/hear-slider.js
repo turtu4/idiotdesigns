@@ -13,7 +13,7 @@ let currentHear = 0;
 function showHearSlide(idx) {
   const img = document.getElementById('hear-slide-img');
   img.src = hearImages[idx];
-  img.alt = `Hearing Aids Are Cool image ${idx + 1}`;
+  img.alt = `Hearing Aids image ${idx + 1}`;
 }
 
 function nextHearSlide() {
