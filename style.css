@@ -602,6 +602,48 @@ footer a {
   font-weight: 700;
   letter-spacing: 0.02em;
 }
+@media (min-width: 761px) {
+  html {
+    scroll-snap-type: y proximity;
+  }
+
+  .hero,
+  .what-i-do,
+  .projects {
+    scroll-snap-align: start;
+  }
+
+  .projects {
+    min-height: calc(100dvh - 5.5rem);
+    margin-bottom: 3rem;
+  }
+
+  .projects h2 {
+    margin-bottom: 1.1rem;
+  }
+
+  .work-browser {
+    min-height: 0;
+    height: calc(100dvh - 13.25rem);
+    gap: clamp(1rem, 3vw, 3rem);
+  }
+
+  .work-stage {
+    gap: 0.45rem;
+  }
+
+  .work-stage-image {
+    width: min(34vw, 42vh, 440px);
+  }
+
+  .work-stage-meta strong {
+    font-size: clamp(1.35rem, 3vw, 2.8rem);
+  }
+
+  .work-stage-meta p {
+    font-size: 0.88rem;
+  }
+}
 @media (max-width: 760px) {
   body {
     padding-top: 82dvh;
