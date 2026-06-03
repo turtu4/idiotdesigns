@@ -88,6 +88,144 @@ const projects = [
     description: "Image Series – Explorations captured in the Tool folder.",
     thumbnail: "images/tool/tool0.png"
   },
+  {
+    name: "Adictionary",
+    url: "projects/addictionary.html",
+    description: "Image Series – The Adictionary collection.",
+    thumbnail: "images/addictionary/Adictionary.jpg"
+  },
+  {
+    name: "Album Covers",
+    url: "projects/album.html",
+    description: "Image Series – Album cover designs.",
+    thumbnail: "images/album/Album Covers.jpg"
+  },
+  {
+    name: "Alienwave",
+    url: "projects/alien.html",
+    description: "Image Series – Alienwave visuals.",
+    thumbnail: "images/alien/Alienwave.jpg"
+  },
+  {
+    name: "Art in Drawers",
+    url: "projects/drawers.html",
+    description: "Image Series – Works collected from the drawers.",
+    thumbnail: "images/drawers/Art in Drawers.jpg"
+  },
+  {
+    name: "Fabric on Film",
+    url: "projects/fabric.html",
+    description: "Image Series – Fabric textures captured on film.",
+    thumbnail: "images/fabric/Fabric on Film.jpg"
+  },
+  {
+    name: "Foraging",
+    url: "projects/forage.html",
+    description: "Image Series – Foraging studies.",
+    thumbnail: "images/forage/Foraging.jpg"
+  },
+  {
+    name: "GeoTeratoma",
+    url: "projects/geoteratoma.html",
+    description: "Image Series – Geometric and organic form explorations.",
+    thumbnail: "images/geoteratoma/GeoTeratoma.jpg"
+  },
+  {
+    name: "H+FF",
+    url: "projects/hff.html",
+    description: "Image Series – H+FF visuals.",
+    thumbnail: "images/hff/H+FF.jpg"
+  },
+  {
+    name: "Hockey",
+    url: "projects/hockey.html",
+    description: "Image Series – Hockey photography.",
+    thumbnail: "images/hockey/Hockey.jpg"
+  },
+  {
+    name: "Homework Workshop",
+    url: "projects/homework.html",
+    description: "Image Series – Homework Workshop project.",
+    thumbnail: "images/homework/Homework Workshop.jpg"
+  },
+  {
+    name: "Koncepteriet",
+    url: "projects/koncept.html",
+    description: "Image Series – Internship at Koncepteriet architecture studio.",
+    thumbnail: "images/koncept/Koncepteriet.jpg"
+  },
+  {
+    name: "Prodigy",
+    url: "projects/prodigy.html",
+    description: "Image Series – The Prodigy set.",
+    thumbnail: "images/prodigy/Prodigy.jpg"
+  },
+  {
+    name: "Sticks",
+    url: "projects/sticks.html",
+    description: "Image Series – Sticks and Idiots documentation.",
+    thumbnail: "images/sticks/Sticks.jpg"
+  },
+  {
+    name: "Stone Edge",
+    url: "projects/stnedge.html",
+    description: "Image Series – Stone Edge visuals.",
+    thumbnail: "images/stnedge/Stone Edge.jpg"
+  },
+  {
+    name: "Music Studio",
+    url: "projects/studio.html",
+    description: "Image Series – Music studio photography.",
+    thumbnail: "images/studio/Music Studio.jpg"
+  },
+  {
+    name: "Tea Doodles",
+    url: "projects/tea.html",
+    description: "Image Series – Doodles over tea.",
+    thumbnail: "images/tea/Tea Doodles.jpg"
+  },
+  {
+    name: "Terrarium",
+    url: "projects/terrarium.html",
+    description: "Image Series – Terrarium constructions.",
+    thumbnail: "images/terrarium/Terrarium.jpg"
+  },
+  {
+    name: "Fat Frumos",
+    url: "projects/th.html",
+    description: "Image Series – Fat Frumos and Lovesick.",
+    thumbnail: "images/th/Fat Frumos.jpg"
+  },
+  {
+    name: "Concrete Tiles",
+    url: "projects/tiles.html",
+    description: "Image Series – Concrete tile designs.",
+    thumbnail: "images/tiles/Concrete Tiles.jpg"
+  },
+  {
+    name: "T-Shirts",
+    url: "projects/tshirts.html",
+    description: "Image Series – T-shirt designs.",
+    thumbnail: "images/tshirts/T-Shirts.jpg"
+  },
+  {
+    name: "Weddings",
+    url: "projects/weddings.html",
+    description: "Image Series – Wedding photography.",
+    thumbnail: "images/weddings/Weddings.jpg"
+  },
+  {
+    name: "Wrestling Tattoos",
+    url: "projects/wrestling.html",
+    description: "Image Series – Wrestling tattoo designs.",
+    thumbnail: "images/wrestling/Wrestling Tattoos.jpg"
+  },
+  {
+    name: "X Series",
+    url: "projects/x.html",
+    description: "Image Series – The X Series.",
+    thumbnail: "images/x/X Series.jpg"
+  },
 ];
 
 const list = document.getElementById('project-list');
