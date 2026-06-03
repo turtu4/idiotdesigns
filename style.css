@@ -368,7 +368,7 @@ header.intro-active h1 {
 }
 .work-browser {
   display: grid;
-  grid-template-columns: minmax(230px, 0.9fr) minmax(280px, 1.25fr) minmax(90px, 0.35fr);
+  grid-template-columns: minmax(150px, 0.5fr) minmax(320px, 1.6fr) minmax(90px, 0.35fr);
   gap: clamp(1rem, 4vw, 4rem);
   align-items: start;
   height: calc(100vh - 14rem);
@@ -388,6 +388,8 @@ header.intro-active h1 {
   align-self: stretch;
   scrollbar-width: thin;
   scrollbar-color: #F8F9F6 transparent;
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
 .work-stage {
   min-height: 0;
@@ -402,7 +404,7 @@ header.intro-active h1 {
 }
 .work-stage-image {
   display: block;
-  width: min(42vw, 54vh, 560px);
+  width: min(100%, 68vh);
   max-width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
