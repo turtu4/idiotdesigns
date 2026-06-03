@@ -371,7 +371,8 @@ header.intro-active h1 {
   grid-template-columns: minmax(230px, 0.9fr) minmax(280px, 1.25fr) minmax(90px, 0.35fr);
   gap: clamp(1rem, 4vw, 4rem);
   align-items: start;
-  min-height: calc(100vh - 14rem);
+  height: calc(100vh - 14rem);
+  overflow: hidden;
 }
 #project-groups,
 .work-stage {
@@ -379,14 +380,21 @@ header.intro-active h1 {
   top: auto;
 }
 #project-groups {
-  max-height: none;
-  overflow: visible;
+  height: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding-right: 0.35rem;
   align-self: stretch;
+  scrollbar-width: thin;
+  scrollbar-color: #F8F9F6 transparent;
 }
 .work-stage {
   min-height: 0;
-  height: 100%;
+  height: auto;
+  align-self: start;
+  position: sticky;
+  top: 0;
   display: grid;
   align-content: start;
   gap: 0.65rem;
@@ -443,8 +451,10 @@ header.intro-active h1 {
   text-transform: uppercase;
 }
 .work-rail {
-  position: relative;
-  height: 100%;
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: calc(100vh - 14rem);
 }
 .work-wheel {
   position: relative;
