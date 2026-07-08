@@ -21,7 +21,7 @@ const projects = [
     name: "Samhållighet",
     url: "projects/andrea.html",
     description: "Biodegradable Bandages – Material design exploring sustainable,<br>biodegradable alternatives for wound care.",
-    thumbnail: "images/andrea/andrea1.jpg"
+    thumbnail: "images/andrea/andrea6.jpg"
   },
   {
     name: "Recordings",
