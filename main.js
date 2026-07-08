@@ -38,7 +38,7 @@ const projects = [
   {
     name: "Journey",
     url: "projects/greta.html",
-    description: "Self Portrait – Messy self-portraits made without overthinking,<br>marking a return to free, unfiltered expression.",
+    description: "Journey – A breaking point in my own art journey,<br>told through messy self-portraits and unfiltered expression.",
     thumbnail: "images/greta/greta1.jpg"
   },
 ];
