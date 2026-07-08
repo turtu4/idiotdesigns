@@ -7,7 +7,7 @@
   margin: 2rem 0 1.5rem 0;
 }
 .azur-slider-arrow {
-  background: #080706;
+  background: #000000;
   border: 2px solid #F8F9F6;
   border-radius: 50%;
   width: 44px;
@@ -21,7 +21,7 @@
 }
 .azur-slider-arrow:hover, .azur-slider-arrow:focus {
   background: #F8F9F6;
-  color: #080706;
+  color: #000000;
   transform: scale(1.08);
   box-shadow: 0 0 0 5px rgba(83,255,69,0.35), 0 10px 20px rgba(0,0,0,0.2);
 }
@@ -109,9 +109,10 @@
   object-fit: contain;
 }
 body {
-  background: #080706;
+  background: #000000;
   color: #F8F9F6;
   font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 200;
   margin: 0;
   padding: 125vh 0 0;
   overflow-x: hidden;
@@ -138,22 +139,29 @@ body {
 /* Single header style */
 /* Header styles */
 .bv-bold {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Libre Caslon Text', serif;
   font-weight: 700;
 }
 .bv-light {
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 300;
+  font-family: 'Libre Caslon Text', serif;
+  font-weight: 400;
+  font-style: italic;
 }
 .bv-light em {
   font-style: italic;
 }
 .libre {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Libre Caslon Text', serif;
   font-weight: 400;
 }
 .libre em {
   font-style: italic;
+}
+header .bv-bold {
+  font-family: 'Pochaevsk', serif;
+}
+.mono {
+  font-family: 'Ligconsolata', ui-monospace, 'SFMono-Regular', Consolas, monospace;
 }
 header {
   border-bottom: 1px solid #F8F9F6;
@@ -163,7 +171,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: #080706;
+  background: #000000;
   box-shadow: none;
   position: fixed;
   z-index: 10;
@@ -236,20 +244,41 @@ header.intro-active h1 {
   text-transform: uppercase;
 }
 .hero h2,
-.hero p {
+.hero-quote {
   transform: translateY(calc(var(--hero-shift, 0px) * -1));
   transition: transform 0.12s linear;
 }
-.hero p {
+.hero-quote {
   transform: translateY(calc(var(--hero-shift, 0px) * -0.45));
 }
-.hero p {
+.hero h2 em {
+  font-family: 'Libre Caslon Text', serif;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  color: #FF4FC3;
+}
+.hero-quote {
   max-width: 840px;
-  line-height: 1.6;
   margin: 0;
-  font-size: clamp(1.2rem, 2.6vw, 2.8rem);
-  font-weight: 700;
-  line-height: 1.08;
+}
+.hero-quote p {
+  font-family: 'Libre Caslon Text', serif;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.35;
+  margin: 0;
+  font-size: clamp(1.2rem, 2.6vw, 2.2rem);
+}
+.hero-quote cite {
+  display: block;
+  font-style: normal;
+  font-family: 'Ligconsolata', ui-monospace, 'SFMono-Regular', Consolas, monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #F8F9F6;
+  margin-top: 0.85rem;
 }
 .what-i-do {
   margin-top: -1rem;
@@ -273,7 +302,7 @@ header.intro-active h1 {
   border-right: 1px solid #F8F9F6;
   border-bottom: 1px solid #F8F9F6;
   padding: 0;
-  background: #080706;
+  background: #000000;
   text-transform: uppercase;
   font-size: 0.82rem;
   letter-spacing: 0;
@@ -285,7 +314,7 @@ header.intro-active h1 {
   color: #F8F9F6;
   text-decoration: none;
   padding: 0.7rem;
-  background: #080706;
+  background: #000000;
   font-size: clamp(1rem, 1.7vw, 1.55rem);
   line-height: 0.98;
   transition: background 0.25s ease, color 0.25s ease;
@@ -297,7 +326,7 @@ header.intro-active h1 {
   outline: none;
 }
 .service-button:active {
-  background: #080706;
+  background: #000000;
   color: var(--service-color);
 }
 .project-group {
@@ -310,7 +339,7 @@ header.intro-active h1 {
   border-top: 1px solid #F8F9F6;
 }
 .project-list li {
-  background: #080706;
+  background: #000000;
   padding: 0;
   font-weight: 500;
   transition: background 0.2s, color 0.2s;
@@ -331,12 +360,12 @@ header.intro-active h1 {
   padding: 0.24rem 0;
   line-height: 1.05;
   text-transform: uppercase;
-  background: #080706;
+  background: #000000;
   border-left: 0 solid var(--project-color);
   transition: padding-left 0.2s, border-left-width 0.2s, background 0.2s, color 0.2s, letter-spacing 0.2s, font-weight 0.2s;
 }
 .work-index-link span {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Ligconsolata', ui-monospace, 'SFMono-Regular', Consolas, monospace;
   font-size: 0.68rem;
   color: var(--project-color);
 }
@@ -346,7 +375,7 @@ header.intro-active h1 {
 .work-index-link.is-active,
 .work-index-link:focus,
 .work-index-link:hover {
-  background: #080706;
+  background: #000000;
   color: #F8F9F6;
   border-left-width: 0.45rem;
   padding-left: 0.45rem;
@@ -427,10 +456,15 @@ header.intro-active h1 {
   border-top: 1px solid var(--project-color, #F8F9F6);
   padding-top: 0.55rem;
 }
-.work-stage-meta span,
+.work-stage-meta span {
+  display: block;
+  font-family: 'Ligconsolata', ui-monospace, 'SFMono-Regular', Consolas, monospace;
+  font-size: 0.8rem;
+}
 .work-stage-meta em {
   display: block;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Libre Caslon Text', serif;
+  font-style: italic;
   font-size: 0.8rem;
 }
 .work-stage-meta strong {
@@ -485,7 +519,7 @@ header.intro-active h1 {
 }
 .work-wheel-item span {
   display: inline;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Ligconsolata', ui-monospace, 'SFMono-Regular', Consolas, monospace;
   margin-right: 0.35rem;
   color: var(--project-color);
 }
@@ -516,7 +550,7 @@ header.intro-active h1 {
   visibility: hidden;
 }
 .work-panel span {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Ligconsolata', ui-monospace, 'SFMono-Regular', Consolas, monospace;
   margin-bottom: 0.35rem;
 }
 .work-panel strong {
@@ -549,7 +583,7 @@ footer {
   padding: 0.55rem 1rem;
   font-size: 0.9rem;
   color: #F8F9F6;
-  background: #080706;
+  background: #000000;
   box-shadow: none;
 }
 footer a {
@@ -607,7 +641,7 @@ footer a {
   bottom: 8px;
   right: 10px;
   background: rgba(111,125,140,0.8);
-  color: #080706;
+  color: #000000;
   padding: 6px 10px;
   font-size: 0.85rem;
   border-radius: 6px;
@@ -772,8 +806,8 @@ footer a {
     font-size: clamp(2.35rem, 15vw, 4.5rem);
   }
 
-  .hero p {
-    font-size: clamp(1.2rem, 6vw, 1.95rem);
+  .hero-quote p {
+    font-size: clamp(1.2rem, 6vw, 1.6rem);
   }
 
   .what-i-do {
@@ -887,7 +921,7 @@ footer a {
   header,
   h1,
   .hero h2,
-  .hero p,
+  .hero-quote,
   .work-index-link {
     transform: none;
     transition: none;

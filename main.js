@@ -24,10 +24,10 @@ const projects = [
     thumbnail: "images/andrea/andrea1.jpg"
   },
   {
-    name: "Self Portrait",
+    name: "Recordings",
     url: "projects/axel.html",
     description: "Breaking Point – Messy self-portraits made without overthinking,<br>marking a return to free, unfiltered expression.",
-    thumbnail: "images/axel/axel1.jpg"
+    thumbnail: ""
   },
   {
     name: "Farväl",
@@ -36,7 +36,7 @@ const projects = [
     thumbnail: "images/daniel/daniel1.jpg"
   },
   {
-    name: "Recordings",
+    name: "Journey",
     url: "projects/greta.html",
     description: "Mental Voyage, Leva & Under Stenen – Studio recordings blending live takes,<br>collaboration, and poem-to-song commissions.",
     thumbnail: "images/greta/greta1.jpg"
@@ -45,8 +45,8 @@ const projects = [
 
 const categories = [
   {
-    title: "Andrei",
-    slug: "andrei",
+    title: "Turtu",
+    slug: "turtu",
     items: ["Common Grounds"]
   },
   {
@@ -57,7 +57,7 @@ const categories = [
   {
     title: "Axel",
     slug: "axel",
-    items: ["Self Portrait"]
+    items: ["Recordings"]
   },
   {
     title: "Daniel",
@@ -67,7 +67,7 @@ const categories = [
   {
     title: "Greta",
     slug: "greta",
-    items: ["Recordings"]
+    items: ["Journey"]
   }
 ];
 
@@ -133,7 +133,8 @@ categories.forEach((cat) => {
     });
 
     const li = document.createElement('li');
-    li.innerHTML = `<a href="${project.url}" class="work-index-link" data-project-index="${renderedProjects.length - 1}" style="--project-color: ${projectColors[(projectNumber - 1) % projectColors.length]};"><span>${String(projectNumber).padStart(2, '0')}</span><img class="work-index-thumb" src="${image}" alt="${project.name} thumbnail">${project.name}</a>`;
+    const thumbHtml = image ? `<img class="work-index-thumb" src="${image}" alt="${project.name} thumbnail">` : '';
+    li.innerHTML = `<a href="${project.url}" class="work-index-link" data-project-index="${renderedProjects.length - 1}" style="--project-color: ${projectColors[(projectNumber - 1) % projectColors.length]};"><span>${String(projectNumber).padStart(2, '0')}</span>${thumbHtml}${project.name}</a>`;
     ul.appendChild(li);
     projectNumber += 1;
   });
@@ -209,6 +210,7 @@ if (projectsSection && renderedProjects.length) {
     activeIndex = index;
     stage.dataset.activeIndex = index;
     stage.style.setProperty('--project-color', project.color);
+    stageImage.style.display = project.image ? '' : 'none';
     stageImage.src = project.image;
     stageImage.alt = `${project.name} thumbnail`;
     stageImage.setAttribute('aria-label', `Open ${project.name}`);
