@@ -26,7 +26,7 @@ const projects = [
   {
     name: "Recordings",
     url: "projects/axel.html",
-    description: "Breaking Point – Messy self-portraits made without overthinking,<br>marking a return to free, unfiltered expression.",
+    description: "Mental Voyage, Leva & Under Stenen – Studio recordings blending live takes,<br>collaboration, and poem-to-song commissions.",
     thumbnail: ""
   },
   {
@@ -38,7 +38,7 @@ const projects = [
   {
     name: "Journey",
     url: "projects/greta.html",
-    description: "Mental Voyage, Leva & Under Stenen – Studio recordings blending live takes,<br>collaboration, and poem-to-song commissions.",
+    description: "Self Portrait – Messy self-portraits made without overthinking,<br>marking a return to free, unfiltered expression.",
     thumbnail: "images/greta/greta1.jpg"
   },
 ];
