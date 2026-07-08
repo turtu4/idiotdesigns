@@ -12,293 +12,62 @@ window.addEventListener('scroll', syncIntroHeader, { passive: true });
 
 const projects = [
   {
-    name: "Dracu'",
-    url: "projects/dracu.html",
-    description: "Re-Reflective Journaling – An illustrative journal exploring character<br>and self through sequential sketching.",
-    thumbnail: "images/dracu/dracu3.jpg"
-  },
-  {
-    name: "Overthinker",
-    url: "projects/overthinker.html",
-    description: "Insecure Memes – Meme and comic doodles about insecurities<br>and emotional struggles.",
-    thumbnail: "images/pg/Overthinker.jpg"
-  },
-  {
-    name: "Playgrounds",
-    url: "projects/betongstommen.html",
-    description: "The Concrete Frame – Playground design weaving risk,<br>autonomy, and creative play.",
-    thumbnail: "images/bt/Bettongstomen.jpg"
-  },
-  {
     name: "Common Grounds",
     url: "projects/common-grounds.html",
     description: "Siblings, Individuals, and Friends – Co-designing around sibling<br>relationships and creative collaboration.",
     thumbnail: "images/ground/g0.jpg"
   },
   {
-    name: "Self Exposures",
-    url: "projects/self-exposures.html",
-    description: "One More Time – Analogue paired exposures about transition<br>and acceptance.",
-    thumbnail: "images/self/Self Exposure.jpg"
+    name: "Samhållighet",
+    url: "projects/andrea.html",
+    description: "Biodegradable Bandages – Material design exploring sustainable,<br>biodegradable alternatives for wound care.",
+    thumbnail: "images/andrea/andrea1.jpg"
   },
   {
-    name: "Azur Foundation",
-    url: "projects/azur.html",
-    description: "Simulation Exposure Reports – Speculative design on simulation<br>over-exposure in a sci-fi medical context.",
-    thumbnail: "images/azur/Azur Foundation.jpg"
+    name: "Self Portrait",
+    url: "projects/axel.html",
+    description: "Breaking Point – Messy self-portraits made without overthinking,<br>marking a return to free, unfiltered expression.",
+    thumbnail: "images/axel/axel1.jpg"
   },
   {
-    name: "Boredom",
-    url: "projects/bore.html",
-    description: "A State of Mind – An anamorphic tape frame in a corridor<br>that snaps into view only from one spot.",
-    thumbnail: "images/bore/Anamorphism.jpg"
+    name: "Farväl",
+    url: "projects/daniel.html",
+    description: "A photographic reflection on losing a mother,<br>grief, and the words left unsaid.",
+    thumbnail: "images/daniel/daniel1.jpg"
   },
   {
-    name: "Scenography",
-    url: "projects/gui.html",
-    description: "Conflicting Set Design – Set design for \"The Guide,\" charting a detective's<br>split psyche with minimalist, shifting spaces.",
-    thumbnail: "images/gui/Guide.jpg"
-  },
-  {
-    name: "Hearing Aids",
-    url: "projects/hear.html",
-    description: "Like for Real, Really Cool – Graphic research on stigma and identity.<br>Styling hearing aids as part of self.",
-    thumbnail: "images/hear/Hearing Aid.jpg"
-  },
-  {
-    name: "Invisible Exhibitions",
-    url: "projects/invisible.html",
-    description: "Inverted Curation – Rural Fröseke \"shows\" that appear only when perceived;<br>single frames stand in for the exhibition.",
-    thumbnail: "images/invisible/Invincible.jpg"
-  },
-  {
-    name: "Penhold Paddle",
-    url: "projects/ping.html",
-    description: "Custom Swedish oak penhold paddle shaped for grip,<br>speed, and control.",
-    thumbnail: "images/ping/PingPong.jpg"
-  },
-  {
-    name: "Pomana",
-    url: "projects/pom.html",
-    description: "DIY Ceremony – Pomana de Viu ritual performed while alive,<br>blending self-purification and community support.",
-    thumbnail: "images/pom/Pomana.jpg"
-  },
-  {
-    name: "Feeling Puzzled",
-    url: "projects/puzzle.html",
-    description: "Rice-and-egg-carton puzzle pieces as a tactile<br>metaphor for connection.",
-    thumbnail: "images/puzzle/Puzzle.jpg"
-  },
-  {
-    name: "Shine & Sparkle",
-    url: "projects/shine.html",
-    description: "Light Studies with Children – Co-designed light play under a bridge,<br>turning a dark spot into kid-led installations.",
-    thumbnail: "images/shine/Shine'n'Sparkle.jpg"
-  },
-  {
-    name: "Tools for Play",
-    url: "projects/tool.html",
-    description: "Music that Fell from the Tree – Tree-mounted shutters make notes;<br>kids collaborate through sound play.",
-    thumbnail: "images/tool/Tools for Play.jpg"
-  },
-  {
-    name: "NUNU",
-    url: "projects/nunu.html",
-    description: "Silly Stuff, Nothing Serious – Dadaist reflections on immigration and fluid memory,<br>mixing film photos with AI distortions.",
-    thumbnail: "images/nu/NUNU.jpg"
-  },
-  {
-    name: "Cover Art",
-    url: "projects/folk.html",
-    description: "Hopeless Noise – Graphic album art for Veive's metal noise:<br>decay, grime, baby pink/black tension, defiant gore.",
-    thumbnail: "images/folk/folk0.png"
-  },
-  {
-    name: "PLAqua",
-    url: "projects/pla.html",
-    description: "PLAqua – 3D-printed PLA forms that support and style aquarium plants<br>while keeping the habitat healthy.",
-    thumbnail: "images/pla/PLAqua.jpg"
-  },
-  {
-    name: "Adictionary",
-    url: "projects/addictionary.html",
-    description: "Adictionary – A visual dictionary of forms and ideas.",
-    thumbnail: "images/addictionary/Adictionary.jpg"
-  },
-  {
-    name: "Album Covers",
-    url: "projects/album.html",
-    description: "Album Covers – Cover artwork and visual identity for music releases.",
-    thumbnail: "images/album/Album Covers.jpg"
-  },
-  {
-    name: "Alienwave",
-    url: "projects/alien.html",
-    description: "Alienwave – Graphic exploration of alien aesthetics and wave forms.",
-    thumbnail: "images/alien/Alienwave.jpg"
-  },
-  {
-    name: "Art in Drawers",
-    url: "projects/drawers.html",
-    description: "Art in Drawers – Works pulled from the drawers and brought to light.",
-    thumbnail: "images/drawers/Art in Drawers.jpg"
-  },
-  {
-    name: "Fabric on Film",
-    url: "projects/fabric.html",
-    description: "Fabric on Film – Textile textures and patterns captured on analogue film.",
-    thumbnail: "images/fabric/Fabric on Film.jpg"
-  },
-  {
-    name: "Foraging",
-    url: "projects/forage.html",
-    description: "Foraging – A visual study of foraging and natural collection.",
-    thumbnail: "images/forage/Foraging.jpg"
-  },
-  {
-    name: "GeoTeratoma",
-    url: "projects/geoteratoma.html",
-    description: "GeoTeratoma – Geometric sculptural forms exploring organic growth.",
-    thumbnail: "images/geoteratoma/GeoTeratoma.jpg"
-  },
-  {
-    name: "H+FF",
-    url: "projects/hff.html",
-    description: "H+FF – Visual project exploring hybrid forms and found footage.",
-    thumbnail: "images/hff/H+FF.jpg"
-  },
-  {
-    name: "Hockey",
-    url: "projects/hockey.html",
-    description: "Hockey – Sports photography on the ice.",
-    thumbnail: "images/hockey/Hockey.jpg"
-  },
-  {
-    name: "Homework Workshop",
-    url: "projects/homework.html",
-    description: "Homework Workshop – A participatory workshop exploring learning and making.",
-    thumbnail: "images/homework/Homework Workshop.jpg"
-  },
-  {
-    name: "Koncepteriet",
-    url: "projects/koncept.html",
-    description: "Koncepteriet – Internship at a sustainable architecture and interior design studio.",
-    thumbnail: "images/koncept/Koncepteriet.jpg"
-  },
-  {
-    name: "Prodigy",
-    url: "projects/prodigy.html",
-    description: "Prodigy – A series of illustrations and graphic works.",
-    thumbnail: "images/prodigy/Prodigy.jpg"
-  },
-  {
-    name: "Sticks",
-    url: "projects/sticks.html",
-    description: "Sticks – Documentation from the Sticks and Idiots project.",
-    thumbnail: "images/sticks/Sticks.jpg"
-  },
-  {
-    name: "Stone Edge",
-    url: "projects/stnedge.html",
-    description: "Stone Edge – Material explorations with stone and edge forms.",
-    thumbnail: "images/stnedge/Stone Edge.jpg"
-  },
-  {
-    name: "Music Studio",
-    url: "projects/studio.html",
-    description: "Music Studio – Photography inside a recording studio.",
-    thumbnail: "images/studio/Music Studio.jpg"
-  },
-  {
-    name: "Tea Doodles",
-    url: "projects/tea.html",
-    description: "Tea Doodles – Spontaneous doodles made over tea.",
-    thumbnail: "images/tea/Tea Doodles.jpg"
-  },
-  {
-    name: "Terrarium",
-    url: "projects/terrarium.html",
-    description: "Terrarium – Miniature ecosystems built by hand.",
-    thumbnail: "images/terrarium/Terrarium.jpg"
-  },
-  {
-    name: "Fat Frumos",
-    url: "projects/th.html",
-    description: "Fat Frumos – A visual narrative on fairy tale archetypes and identity.",
-    thumbnail: "images/th/Fat Frumos.jpg"
-  },
-  {
-    name: "Concrete Tiles",
-    url: "projects/tiles.html",
-    description: "Concrete Tiles – Hand-cast concrete tile designs.",
-    thumbnail: "images/tiles/Concrete Tiles.jpg"
-  },
-  {
-    name: "T-Shirts",
-    url: "projects/tshirts.html",
-    description: "T-Shirts – Wearable graphic design.",
-    thumbnail: "images/tshirts/T-Shirts.jpg"
-  },
-  {
-    name: "Weddings",
-    url: "projects/weddings.html",
-    description: "Weddings – Wedding photography.",
-    thumbnail: "images/weddings/Weddings.jpg"
-  },
-  {
-    name: "Wrestling Tattoos",
-    url: "projects/wrestling.html",
-    description: "Wrestling Tattoos – Tattoo designs inspired by wrestling culture.",
-    thumbnail: "images/wrestling/Wrestling Tattoos.jpg"
-  },
-  {
-    name: "X Series",
-    url: "projects/x.html",
-    description: "X Series – A series of experimental visual works.",
-    thumbnail: "images/x/X Series.jpg"
+    name: "Recordings",
+    url: "projects/greta.html",
+    description: "Mental Voyage, Leva & Under Stenen – Studio recordings blending live takes,<br>collaboration, and poem-to-song commissions.",
+    thumbnail: "images/greta/greta1.jpg"
   },
 ];
 
 const categories = [
   {
-    title: "Graphic Design",
-    slug: "graphic-design",
-    items: ["Cover Art", "Hearing Aids", "Adictionary", "Album Covers", "Alienwave", "H+FF", "Tea Doodles", "T-Shirts", "Wrestling Tattoos", "Prodigy"]
+    title: "Andrei",
+    slug: "andrei",
+    items: ["Common Grounds"]
   },
   {
-    title: "Art Direction",
-    slug: "art-direction",
-    items: ["Scenography"]
+    title: "Andrea",
+    slug: "andrea",
+    items: ["Samhållighet"]
   },
   {
-    title: "Exhibitions",
-    slug: "exhibitions",
-    items: ["Boredom", "Invisible Exhibitions", "Art in Drawers", "Stone Edge", "Sticks"]
+    title: "Axel",
+    slug: "axel",
+    items: ["Self Portrait"]
   },
   {
-    title: "Workshops",
-    slug: "workshops",
-    items: ["Common Grounds", "Shine & Sparkle", "Homework Workshop"]
+    title: "Daniel",
+    slug: "daniel",
+    items: ["Farväl"]
   },
   {
-    title: "Prototyping",
-    slug: "prototyping",
-    items: ["Feeling Puzzled", "Penhold Paddle", "PLAqua", "Playgrounds", "Tools for Play", "Concrete Tiles", "GeoTeratoma", "Terrarium", "Koncepteriet"]
-  },
-  {
-    title: "Photography",
-    slug: "photography",
-    items: ["NUNU", "Self Exposures", "Fabric on Film", "Hockey", "Music Studio", "Weddings", "X Series"]
-  },
-  {
-    title: "Research",
-    slug: "research",
-    items: ["Pomana", "Foraging"]
-  },
-  {
-    title: "Story Telling",
-    slug: "story-telling",
-    items: ["Azur Foundation", "Dracu'", "Overthinker", "Fat Frumos"]
+    title: "Greta",
+    slug: "greta",
+    items: ["Recordings"]
   }
 ];
 
@@ -348,7 +117,7 @@ categories.forEach((cat) => {
   cat.items.forEach((name) => {
     const project = projectMap[name];
     if (!project) return;
-    const image = project.thumbnail || (project.name === "Dracu'" ? "images/dracu/dracu3.jpg" : "");
+    const image = project.thumbnail || "";
     const parts = project.description.split('–');
     const subtitle = parts[0]?.trim() || '';
     const rest = parts.slice(1).join('–').trim();
